@@ -1,8 +1,12 @@
-const NavBar = () => {
+
+import CartWidget from "./CartWidget"
+
+const NavBar = () =>  {   
+
     return (
         <>
-        <header>
-            <h1>Desafío clase 3</h1>
+        <header id="main-header">
+            <h1>Desafío clase 4</h1>
             <h2>Rodrigo Monteoliva</h2>
             <nav>
                 <ul>
@@ -10,8 +14,9 @@ const NavBar = () => {
                 <li><a href="https://www.coderhouse.es/">Nosotros</a></li>
                 <li><a href="https://www.coderhouse.es/">Tienda</a></li>
                 <li><a href="https://www.coderhouse.es/">Contacto</a></li>
+                <CartWidget />
                 </ul>
-            </nav>
+            </nav>  
         </header>
         </>
     )
