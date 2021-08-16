@@ -1,6 +1,6 @@
-
-import Main from "./Main"
-import NavBar from "./NavBar"
+import React from 'react'
+import Main from '../componentesMain/Main'
+import NavBar from '../componentesNavBar/NavBar'
 
 const App = () => {
 

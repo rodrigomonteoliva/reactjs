@@ -1,0 +1,9 @@
+.mi-tienda {
+    margin-top: 50px;
+}
+.listado-items {
+    padding-left: 120px;
+    align-items: center; 
+    font-size: 19px;
+    color: rgb(34, 12, 12);
+}

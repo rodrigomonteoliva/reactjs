@@ -1,8 +1,8 @@
-
+import React from 'react'
 import CartWidget from "./CartWidget"
 
 const NavBar = () =>  {   
-
+   
     return (
         <>
         <header id="main-header">
@@ -21,5 +21,5 @@ const NavBar = () =>  {
         </>
     )
 }
-
+    
 export default NavBar
