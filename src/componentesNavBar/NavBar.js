@@ -6,7 +6,7 @@ const NavBar = () =>  {
     return (
         <>
         <header id="main-header">
-            <h1>Desafío clase 4</h1>
+            <h1>Desafío clase 5</h1>
             <h2>Rodrigo Monteoliva</h2>
             <nav>
                 <ul>

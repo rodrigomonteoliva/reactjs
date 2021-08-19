@@ -1,5 +1,5 @@
 import React from "react"
-import CartItemContainer from "./CartItemContainer"
+import ItemListContainer from "./ItemListContainer"
 
 
 const Main = () => {
@@ -8,7 +8,7 @@ const Main = () => {
         <>
         <main>
         <div>
-            <CartItemContainer />
+            <ItemListContainer/>
         </div>
         </main>
         

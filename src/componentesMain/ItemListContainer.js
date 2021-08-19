@@ -1,6 +1,6 @@
 import React from "react"
-
-const CartItemContainer = () => {
+import ItemCount from "./ItemCount";
+const ItemListContainer = () => {
 
     const items= {
         tipo: 'Vinilos',
@@ -25,8 +25,9 @@ const CartItemContainer = () => {
             }  
         </ol>
         </div>
+        <ItemCount stock={8} /* stock={0} */ initial={1}  onAdd={(cantidad) => {console.log(cantidad)}}/>
         </>
     );
 }
 
-export default CartItemContainer;
+export default ItemListContainer;
