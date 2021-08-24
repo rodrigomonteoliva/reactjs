@@ -1,8 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 const ItemCount = ({stock,initial,onAdd}) => {
 
     const [contador, setContador] = useState(initial);
+
+    useEffect(() =>{
+        console.log("estoy después del render")
+    },[])
 
     const aumentarContador = () => {
         if (contador < stock){
