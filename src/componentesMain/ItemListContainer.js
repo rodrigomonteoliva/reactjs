@@ -1,17 +1,16 @@
-import React from "react"
+import React from "react";
 import ItemCount from "./ItemCount";
-import ItemList from "./ItemList"
+import ItemDetailContainer from "./ItemDetailContiner";
+import ItemList from "./ItemList";
+
 
 const ItemListContainer = () => {
  
     return (
         <>
-        <div>
+        <h1 className="cabecera">Tienda</h1>
         <ItemList />
-        </div>
-        <div>
         <ItemCount stock={8} /* stock={0} */ initial={1}  onAdd={(cantidad) => {console.log(cantidad)}}/>
-        </div>
         </>
     );
 }
