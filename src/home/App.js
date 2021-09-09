@@ -1,20 +1,32 @@
+import React, { useState } from 'react';
+import NavBar from '../components/header/NavBar';
+import ItemListContainer from '../components/items/ItemListContainer';
+import ItemDetailContainer from '../components/details/ItemDetailContainer';
+import ItemCount from '../components/ItemCount';
 
-import React from 'react'
-import Main from '../componentesMain/Main'
-import NavBar from '../componentesNavBar/NavBar'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+function App() {
+  return (
+    <BrowserRouter>
 
-const App = () => {
+    <Route path="/" component={NavBar} />
+    <Route path="/productos" component={ItemListContainer} />
+    <Route path="/productos/detail/:id" component={ItemDetailContainer} />
 
+      {/*<NavBar />
 
-    
-    return ( 
-        <>
-        <NavBar />
-        <Main />
-        </>
-    )
+      <Switch>
+      <Route path="/" component= {ItemListContainer} exact />
+      <Route path="/link/:id" component= {ItemListContainer} />
+      <Route path="/item/:id" component= {ItemDetailContainer} />
+      </Switch>*/}
+
+      <ItemCount stock={8} /* stock={0} */ initial={1}  onAdd={(cantidad) => {console.log(cantidad)}}/>
+
+    </BrowserRouter>
+
+  );
 }
 
-export default App
-
+export default App;

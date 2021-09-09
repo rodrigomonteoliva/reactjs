@@ -1,17 +1,15 @@
 
-import React from "react"
-
-import ReactDOM from "react-dom"
-
-import App from "./home/App"
-
-// CSS
-
-import "./home/style.css"
-
-import "./componentesMain/estilosMain.css"
-
-import "./componentesNavBar/estilosNavBar.css"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './home/App';
+import './css/style.css'
 
 
-ReactDOM.render(<App/>,document.querySelector("#root"))
+ReactDOM.render(
+  <>
+    <App />
+  </>
+  
+  ,document.getElementById('root')
+
+);
