@@ -1,10 +1,23 @@
-import React from 'react'
+import React,{ useContext } from 'react';
+import ItemCount from './ItemCount';
+import { contexto } from '../../context/contexto';
+
 
 const ItemDetail = ({producto}) => {
+
+    const {agregarProducto} = useContext(contexto)
+
+    const onAdd = (cantidad) => {
+        const producto_formateado = {...producto, cantidad}
+        agregarProducto(producto_formateado)
+}
+
     return (
-        <>
-        <h2>{producto.titulo}</h2>
-        </>     
+        <div className="detalle-producto">
+             <h2>{producto.titulo} - €{producto.precio}</h2>
+             <img className="imagen" src={producto.image} />
+             <ItemCount stock={8} /* stock={0} */ initial={1}  onAdd={onAdd} />
+        </div>     
     );
 };
 

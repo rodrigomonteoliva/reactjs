@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
+import LayoutPagina from '../LayoutPagina';
 
 
 const ItemListContainer = () => {
@@ -22,9 +23,9 @@ const ItemListContainer = () => {
     }, [id])
 
     return (
-        <>
-        <ItemList productos = {productos}/>
-        </>
+        <LayoutPagina titulo="Lista de Productos">
+            <ItemList productos = {productos}/>
+        </LayoutPagina>
     )
 }
 

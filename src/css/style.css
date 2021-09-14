@@ -91,5 +91,32 @@ img {
     color: blanchedalmond;
     font-size: 12px;
 }
+.tienda {
+    display: grid;
+}
+.btn-agregar {
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 545px;
+    background-color: black;
+    color: rgb(247, 239, 228);
+    border-radius: 5%;
+    border: none;
+}
+.ver-mas {
+    width: 70px;
+
+    margin-left: 560px;
+    margin-top: 10px;
+    font-size: 20px;
+    border: 1px solid oldlace;
+}
+.pagina-cabecera h2{
+    margin-top: 60px;
+    font-size: 40px;
+    color: rgb(65, 65, 63);
+    
+}
 
 

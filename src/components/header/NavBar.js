@@ -12,8 +12,8 @@ const NavBar = () => {
                 </Link>
             <nav>
                 <ul>
-                <Link to="/productos" className="li">Tienda</Link>
-                <Link to="/productos/Vinilos" className="li">Vinilos</Link>
+                <Link to="/" className="li">Tienda</Link>
+                <Link to="/categoria/:id" className="li">Vinilos</Link>
                 <Link to="/link/3" className="li">CD's</Link>
                 <Link to="/link/4" className="li">Contacto</Link>
                 <CartWitdget />

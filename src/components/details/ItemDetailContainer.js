@@ -1,32 +1,22 @@
 import React, { useEffect, useState } from 'react';
+import LayoutPagina from '../LayoutPagina';
 import ItemDetail from './ItemDetail';
-import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
 
-    const [producto, setProducto] = useState({});
+    const [producto, setProducto] = useState({})
 
-    const {id} = useParams
-
-    const getProducto = () => {
-        fetch({producto})
-        .then(response => response.json())
-        .then(response => {
-        let productoSeleccionado = response.filter((p) => {return (p.tipo === parseInt(id))})
-        setProducto(...productoSeleccionado)
-    })
-    }
     useEffect(() => {
-        getProducto()
-    })
+        setTimeout(() => {
+            setProducto({titulo: "CancerBats", precio: 20, descripcion: "qkhasdjf[ou33", image: "https://krm-cdn.s3.amazonaws.com/images/eu/3/3/6/33690_400x400.jpg"})
+        }, 2000)
+    }, [])
 
     return (
-       <div>
-       {/*<ItemDetail producto={producto} />*/}
-       <img width="100px" src="producto.image" alt="" />
-
-       </div>     
+        <LayoutPagina title="Detalle del Producto">
+            <ItemDetail producto={producto} />
+        </LayoutPagina>
     );
-};
+}
 
 export default ItemDetailContainer
