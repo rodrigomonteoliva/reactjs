@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            setProducto({titulo: "CancerBats", precio: 20, descripcion: "qkhasdjf[ou33", image: "https://krm-cdn.s3.amazonaws.com/images/eu/3/3/6/33690_400x400.jpg"})
+            setProducto({title: "CancerBats", price: 20, description: "qkhasdjf[ou33", image: "https://krm-cdn.s3.amazonaws.com/images/eu/3/3/6/33690_400x400.jpg"})
         }, 2000)
     }, [])
 

@@ -14,8 +14,8 @@ const ItemDetail = ({producto}) => {
 
     return (
         <div className="detalle-producto">
-             <h2>{producto.titulo} - €{producto.precio}</h2>
-             <img className="imagen" src={producto.image} />
+             <h2>{producto.title}  €{producto.price}</h2>
+             <img className="imagenDetalle" src={producto.image} />
              <ItemCount stock={8} /* stock={0} */ initial={1}  onAdd={onAdd} />
         </div>     
     );

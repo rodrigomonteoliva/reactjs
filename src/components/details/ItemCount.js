@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { contexto } from '../../context/contexto';
 
 const ItemCount = ({stock,initial,onAdd}) => {
 
@@ -14,7 +15,7 @@ const ItemCount = ({stock,initial,onAdd}) => {
         if(contador > 1){
         setContador(contador - 1);      
     } 
-} 
+}   
     const agregarCarrito = () => {
         if(stock > 0){
             onAdd(contador)
